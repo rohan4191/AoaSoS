@@ -1,0 +1,55 @@
+html {
+    background: #121212;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content {
+    background-color: rgb(57, 57, 52);
+    margin: auto;
+    width: 60%;
+    height: 90%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#choices {
+    background-color: rgb(57, 57, 52);
+    margin: auto;
+    width: 60%;
+    height: 90%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.storylet {
+    width: 100%;
+    outline: 2px solid rgb(94, 94, 96);
+    color: black;
+    float: left;
+
+}
+.storylet:hover {
+    background-color: rgb(90, 90, 92);
+}
+
+.title {
+    color: white;
+    margin: 10px;
+}
+
+.subtitle {
+    color: white;
+    margin: 10px;
+    margin-left: 50px;
+    font-style: italic;
+}
+
+#header {
+    color: white;
+    text-align: center;
+}
+
+.description {
+    color: white;
+
+}
