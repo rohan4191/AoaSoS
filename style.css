@@ -6,6 +6,7 @@ html {
 #content {
     background-color: rgb(57, 57, 52);
     margin: auto;
+    float: left;
     width: 60%;
     height: 90%;
     padding: 10px;
@@ -15,7 +16,18 @@ html {
 #choices {
     background-color: rgb(57, 57, 52);
     margin: auto;
+    float: left;
     width: 60%;
+    height: 90%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#status {
+    background-color: rgb(57, 57, 52);
+    margin: auto;
+    float: top-right;
+    width: 30%;
     height: 90%;
     padding: 10px;
     overflow: hidden;
@@ -44,12 +56,15 @@ html {
     font-style: italic;
 }
 
-#header {
+h1 {
     color: white;
     text-align: center;
 }
 
+.statLine {
+    color: white;
+}
+
 .description {
     color: white;
-
 }
