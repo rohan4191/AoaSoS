@@ -579,12 +579,16 @@ function updateStats() {
         humans = 0;
     }
 
+    var statTitleDiv = document.getElementById("status-title");
+    deleteChildren(statTitleDiv);
+    var title = document.createElement("h1");
+    title.setAttribute("class", "statusTitle")
+    title.innerText = "Status";
+    statTitleDiv.appendChild(title);
+
     var statDiv = document.getElementById("status");
     deleteChildren(statDiv);
-    var statDivTitle = document.createElement("h1");
-    statDivTitle.setAttribute("class", "statusTitle")
-    statDivTitle.innerText = "Status";
-    statDiv.appendChild(statDivTitle);
+
 
     for (var stat of shownStats) {
         if (stat[1] < 0) {
