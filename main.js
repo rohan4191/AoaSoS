@@ -614,7 +614,7 @@ function updateStats() {
 function homeScreen() {
     // Update status variables
     if (midGame) {
-        yearsLeft[1]--; // Decrement at least a year after every storylet
+        yearsLeft[1]--; // Decrement a year after every storylet
         if (boredom < 2) {
             yearsLeft[1]--; // Decrement an extra year if not very bored
         }
