@@ -1,9 +1,9 @@
 :root {
-    --bgColor: #121212;
+    --bgColor: #013305;
 }
 
 html {
-    background: var(--bgColor);
+    background: #121212;
     font: 1.3rem Inconsolata, monospace;
     color: #00FF00; 
 }
