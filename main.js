@@ -451,6 +451,11 @@ var endTime = {
 var allStorylets = [alone];
 var displayedStorylets = [];
 
+// Delay for typewriter effect
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function removeStorylet(storylet) {
     let index = allStorylets.indexOf(storylet);
     if (index > -1) {
@@ -531,17 +536,35 @@ function handleChoices(e) {
     }
 }
 
+function typeWriter(text, target, speed) {
+    target.innerText += "h";
+    sleep(100);
+
+    /** 
+    i = 0;
+    if (i < text.length) {
+        target.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    } */
+}
+
 function getStorylet(e) {
     // Replace title and add storylet description
     let title = e.currentTarget.childNodes[0].innerText;
     let desc = e.currentTarget.desc;
     content = document.getElementById("content");
     let head = document.getElementById("header");
-    head.innerText = title;
     let text = document.createElement("h3");
     text.className = "description"
     text.innerText = desc;
-    head.parentNode.insertBefore(text, head.nextSibling);
+    head.parentNode.insertBefore(text, head.nextSibling)
+    for (let i = 0; i < 10; i++) {
+        head.innerHTML += i;
+        sleep(100);
+    }
+
+    //typeWriter(title, head, 50);
 
     handleChoices(e);
 }
